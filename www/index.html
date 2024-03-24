@@ -11,7 +11,34 @@
     </script>
 </head>
 <body>
-	<br />
-    This is a template for Monaca app.
+    <div class="navbar">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+    <button id="bb"></button>
+  </ul>
+</div>
+
+<div class="background-animation" id="backgroundAnimation"></div>
+
+<div class="footer"></div>
+
+<div class="t"><p>A acessibilidade é um conjunto de medidas que garantem que todas as pessoas tenham acesso a todas as áreas de seu convívio, incluindo espaços, mobiliários, equipamentos urbanos, sistemas e meios de comunicação e informação</p>
+<button id="aumentar-fonte">+</button><button id="diminuir-fonte">-</button>
+</div>
+<script src="script.js"></script>
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
 </body>
 </html>
